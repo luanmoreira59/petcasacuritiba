@@ -163,17 +163,6 @@
   border-radius: 30px;
   position: relative;
   transform: translateY(-105px);
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: $purple-circle-contact;
-    right: -9px;
-    top: -15px;
-    
-  }
   img {
     margin-top: .5rem;
     width: 90px;
