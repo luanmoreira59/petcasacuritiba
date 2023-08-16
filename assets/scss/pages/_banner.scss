@@ -1,0 +1,100 @@
+
+#s-banner {
+  background: url(/assets/img/banner-desktop.png) no-repeat bottom / contain;
+  height: 100%;
+  padding: 30rem 0 15rem 0;
+  @include responsive-small-desktop() {
+    background: url(/assets/img/banner.png) no-repeat center / contain;
+    height: 100%;
+    padding: 0;
+  }
+  @include responsive-tablet() {
+    background: url(/assets/img/banner-tablet.png) no-repeat center / cover;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 10rem;
+  }
+  @include responsive-mobile() {
+    background: url(/assets/img/banner-mobilee.png) no-repeat center / cover;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 18rem;
+  }
+  @include responsive-small-mobile() {
+    background: url(/assets/img/banner-mobilee.png) no-repeat center / contain;
+    height: 100%;
+    padding: 0;
+    padding-bottom: 18rem;
+  }
+  .container {
+    @include container2();
+    @include responsive-small-mobile() {
+      padding: 14rem 2.5rem 3rem 2.5rem;
+    }
+    @include responsive-mobile() {
+      padding: 14rem 2.5rem 3rem 2.5rem;
+    }
+    @include responsive-tablet() {
+      padding: 17rem 4rem 12rem 4rem;
+    }
+    @include responsive-small-desktop() {
+      padding: 18rem 4rem 15rem 4rem;
+    }
+    div {
+      transform: translateY(-50px);
+      transform: translateX(23px);
+      text-align: center;
+      @include responsive-mobile() {
+        transform: translateX(0);
+      }
+      @include responsive-small-mobile() {
+        transform: translateX(0);
+        transform: translateY(-60px);
+      }
+      @include responsive-small-desktop() {
+        transform: translateY(0);
+      }
+      @include responsive-tablet() {
+        transform: translateY(0);
+      }
+      h1 {
+        font: 700 6rem $font-main;
+        max-width: 700px;
+        color: #20212B;
+        margin: 0 auto;
+        @include responsive-small-desktop() {
+          font-size: 5.5rem;
+          max-width: 650px;
+        }
+        @include responsive-tablet() {
+          font-size: 5rem;
+          max-width: 600px;
+        }
+        @include responsive-mobile() {
+          font-size: 4rem;
+          max-width: 600px;
+        }
+        @include responsive-small-mobile() {
+          font-size: 3rem;
+          max-width: 600px;
+        }
+      }
+      p {
+        font: 500 2rem $font-main;
+        max-width: 340px;
+        padding-top: 3.5rem;
+        line-height: 30px;
+        color: #20212B;
+        margin: 0 auto;
+        @include responsive-mobile() {
+          font-size: 1.5rem;
+          max-width: 250px;
+        }
+        @include responsive-small-mobile() {
+          font-size: 1.5rem;
+          max-width: 240px;
+        }
+      }
+    }
+  }
+}

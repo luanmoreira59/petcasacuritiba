@@ -1,0 +1,68 @@
+
+// media queries
+
+@mixin responsive-small-mobile {
+  @media screen and (max-width: 376px) {
+    @content;
+  }
+}
+
+@mixin responsive-mobile {
+  @media screen and (min-width: 377px) and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin responsive-tablet {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin responsive-small-desktop {
+  @media screen and (min-width: 993px) and (max-width: 1300px) {
+    @content;
+  }
+}
+
+@mixin responsive-desktop {
+  @media screen and (min-width: 1301px) {
+    @content;
+  }
+}
+
+@mixin responsive-nav() {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+
+// position elements
+
+@mixin flexbox-between() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexbox-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin align-center() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin container() {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+@mixin container2() {
+  max-width: 1450px;
+  margin: 0 auto;
+}

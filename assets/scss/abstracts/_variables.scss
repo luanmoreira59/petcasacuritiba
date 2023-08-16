@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url(/assets/font/RecoletaAlt-Bold.ttf);
+}
+
+// default font
+$font-main: 'Quicksand', sans-serif;
+$font-secondary: 'Recoleta', sans-serif;
+$font-third: 'Fredoka', sans-serif;
+
+
+// dark colors
+$dark-main: #1F2130;
+$dark-title: #19063D;
+$dark-bg-footer: #14151E;
+$dark-p: #513E6F;
+
+
+//gray colors
+$gray-line-footer: #3F3E45;
+$gray-p-footer: #B5B5B5;
+$gray-line-contact: #646677;
+
+
+// light colors
+$light-main: #FFFFFF;
+$light-p: #EDEDED;
+
+
+
+// colors
+$orange-main: #FF8139;
+$purple-title: #19063D;
+$purple-main: #733CE8;
+$purple-circle-contact: #571FD1;
+$green-contact: #3C8B7E;
+$blue-stroke-button-carousel: #9BBFE0;

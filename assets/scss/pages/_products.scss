@@ -1,0 +1,113 @@
+
+#s-products {
+  .container {
+    margin: 0 auto;
+    @include container2();
+    max-width: 1350px;
+    h1 {
+      text-align: center;
+      font-size: 3.3rem;
+      font-weight: 600;
+      color: $dark-main;
+      margin: 5rem 0;
+      margin-bottom: 7rem;
+      @include responsive-small-mobile() {
+        margin-top: 10rem;
+      }
+      @include responsive-mobile() {
+        margin-top: 14rem;
+      }
+      @include responsive-tablet() {
+        margin-top: 14rem;
+      }
+    }
+  }
+  @include responsive-small-mobile() {
+    padding: 0 2.5rem 0 2.5rem;
+  }
+  @include responsive-desktop {
+    padding: 5rem 5rem 20rem 8rem;
+  }
+}
+
+.container-card-products {
+  @include flexbox-center();
+  gap: 25px;
+  flex-wrap: wrap;
+  @include responsive-mobile() {
+    padding-bottom: 13rem;
+  }
+  @include responsive-small-mobile() {
+    padding-bottom: 13rem;
+  }
+  @include responsive-tablet() {
+    padding-bottom: 13rem;
+  }
+  @include responsive-small-desktop() {
+    padding-bottom: 15rem;
+  }
+  img {
+    @include responsive-mobile() {
+      width: 330px;
+    }
+    @include responsive-small-mobile() {
+      width: 330px;
+    }
+  }
+  div {
+    position: relative;
+    img {
+      transition: all .5s ease-in-out;
+      width: 330px;
+      cursor: pointer;
+    }
+    div {
+      position: absolute;
+      left: 5%;
+      bottom: 16px;
+      background: linear-gradient(163deg, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0.10) 40%);
+      box-shadow: 1px 1px 15px 0px #00000028;
+      backdrop-filter: blur(10px);
+      padding: 3.5rem 0;
+      width: 90%;
+      text-align: center;
+      border-radius: 60px;
+      h2 {
+        font: 600 2.6rem $font-main;
+        color: $light-main;
+        @include responsive-mobile() {
+          font-size: 2.4rem;
+        }
+        @include responsive-small-mobile() {
+          font-size: 2.3rem;
+        }
+      }
+    }
+  }
+}
+
+.dog-shaver {
+  .dog-shaver-img {
+    flex-grow: 1;
+    width: 685px;
+  }
+}
+
+.dog-shaver-mobile {
+  display: none;
+  @include responsive-mobile() {
+    display: block;
+  }
+  @include responsive-small-mobile() {
+    display: block;
+  }
+}
+
+.dog-shaver-img {
+  @include responsive-mobile() {
+    display: none;
+  }
+  @include responsive-small-mobile() {
+    display: none;
+  }
+}

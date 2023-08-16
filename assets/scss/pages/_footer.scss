@@ -1,0 +1,138 @@
+
+footer {
+  background-color: $dark-bg-footer;
+  height: 100%;
+  .container {
+    @include container();
+    max-width: 1300px;
+    @include responsive-tablet() {
+      padding: 7rem 4rem 6rem 4rem;
+    }
+    @include responsive-mobile() {
+      padding: 5rem 2.5rem 6rem 2.5rem;
+    }
+    @include responsive-small-mobile() {
+      padding: 5rem 2.5rem 6rem 2.5rem;
+    }
+    @include responsive-small-desktop() {
+      padding: 8rem 4rem 4rem 4rem;
+    }
+    @include responsive-desktop() {
+      padding: 8rem 4rem 4rem 4rem;
+    }
+  }
+}
+
+.content-footer-links {
+  @include align-center();
+  align-items: start;
+  gap: 230px;
+  border-bottom: 1px solid $gray-line-footer;
+  padding-bottom: 6rem;
+  @include responsive-tablet() {
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  @include responsive-mobile() {
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  @include responsive-small-mobile() {
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  div:nth-child(1) {
+    .brand-footer {
+      width: 270px;
+      margin: 3rem 0 3rem 0;
+    }
+    span {
+      display: block;
+      color: rgba(255, 255, 255, 0.70);
+      font: 400 1.6rem $font-main;
+      letter-spacing: .5px;
+      line-height: 28px;
+    }
+  }
+}
+
+.content-links {
+  @include align-center();
+  align-items: start;
+  gap: 120px;
+  @include responsive-tablet() {
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  @include responsive-mobile() {
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  @include responsive-small-mobile() {
+    flex-wrap: wrap;
+    gap: 55px;
+  }
+  h1 {
+    color: $light-main;
+    font: 500 1.9rem $font-main;
+    letter-spacing: .4px;
+    letter-spacing: .7px;
+    margin-bottom: 2.5rem;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.70);
+    font: 400 1.5rem $font-main;
+    letter-spacing: .4px;
+    cursor: pointer;
+    padding-bottom: 1.7rem;
+    &:hover {
+      color: $light-main;
+    }
+  }
+}
+
+.content-footer-infos {
+  @include flexbox-between();
+  @include responsive-tablet() {
+    flex-wrap: wrap;
+  }
+  div {
+    @include align-center();
+    gap: 25px;
+    p {
+      color: rgba(255, 255, 255, 0.70);
+      font: 300 1.6rem $font-main;
+      letter-spacing: .5px;
+      padding-top: 2rem;
+      line-height: 28px;
+    }
+    img {
+      width: 24px;
+      padding-top: 2.5rem;
+    }
+  }
+}
+
+.container-app-footer {
+  div {
+    @include align-center();
+    margin-top: 1.5rem;
+    background-color: #262837;
+    cursor: pointer;
+    padding: 0 .5rem 0 2.2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    gap: 13px;
+    width: 180px;
+    height: 55px;
+    h2 {
+      color: $light-main;
+      font-weight: 500;
+      font: 300 1.7rem $font-third;
+      letter-spacing: .4px;
+    }
+    &:hover {
+      filter: brightness(1.3);
+    }
+  }
+}

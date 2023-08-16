@@ -1,0 +1,334 @@
+
+#s-contact {
+  @include responsive-small-mobile() {
+    padding: 0 2.5rem 15rem 2.5rem;
+  }
+  @include responsive-mobile() {
+    padding: 0 2.5rem 15rem 2.5rem;
+  }
+  @include responsive-tablet() {
+    padding: 0 4rem 15rem 4rem;
+  }
+  @include responsive-small-desktop() {
+    padding: 5rem 4rem 15rem 4rem;
+  }
+  @include responsive-desktop() {
+    padding: 5rem 12rem 20rem 12rem;
+  }
+
+  .container {
+    background-color: $dark-main;
+    border-radius: 60px;
+    width: 100%;
+    position: relative;
+    @include container2();
+    @include align-center();
+    align-items: start;
+    @include responsive-nav() {
+      flex-wrap: wrap;
+    }
+    @include responsive-small-mobile() {
+      padding: 3rem 2.5rem 38rem 2.5rem;
+    }
+    @include responsive-mobile() {
+      padding: 3rem 2.5rem 38rem 2.5rem;
+    }
+    @include responsive-tablet() {
+      padding: 5rem 3rem 26rem 8rem;
+    }
+    @include responsive-small-desktop() {
+      padding: 5rem 8rem 0 8rem;
+    }
+    @include responsive-desktop() {
+      padding: 4rem 4rem 0 8rem;
+      max-width: 1320px;
+    }
+  }
+}
+
+.container-title-choose {
+  @include responsive-mobile() {
+    img {
+      width: 45px;
+    }
+  }
+  @include responsive-small-mobile() {
+    img {
+      width: 45px;
+    }
+  }
+  h1 {
+    font: 500 5.5rem $font-secondary;
+    color: $light-main;
+    line-height: 80px;
+    max-width: 500px;
+    padding-top: 2rem;
+    @include responsive-tablet() {
+      font-size: 5rem;
+      line-height: 60px;
+      max-width: 800px;
+    }
+    @include responsive-mobile() {
+      font-size: 4.5rem;
+      line-height: 65px;
+      max-width: 800px;
+    }
+    @include responsive-small-mobile() {
+      font-size: 4.5rem;
+      line-height: 65px;
+    }
+  }
+  h2 {
+    font: 500 1.7rem $font-main;
+    color: $light-main;
+    line-height: 30px;
+    max-width: 250px;
+    padding: 2rem 0 3.5rem 0;
+    @include responsive-mobile() {
+      font-size: 1.5rem;
+    }
+    @include responsive-small-mobile() {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.container-dogs-contact {
+  @include flexbox-center();
+  @include responsive-tablet() {
+    align-items: start;
+    margin-top: 10rem;
+  }
+  @include responsive-mobile() {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 6rem;
+  }
+  @include responsive-small-mobile() {
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-top: 6rem;
+  }
+  div {
+    h3 {
+      font: 600 2rem $font-main;
+      color: $light-main;
+      margin-bottom: .8rem;
+    }
+    span {
+      font: 300 1.4rem $font-main;
+      color: $light-main;
+      margin-top: 2rem;
+      cursor: pointer;
+      &:hover {
+        color: $orange-main;
+      }
+      img {
+        width: 10px;
+        margin-left: 5px;
+        transform: translateY(1px);
+      }
+    }
+    p {
+      font: 300 1.3rem $font-main;
+      color: $light-main;
+      max-width: 230px;
+      line-height: 24px;
+    }
+  }
+}
+
+.content-dog1 {
+  margin: 0 9rem 0 7rem;
+  transform: translateY(-50px);
+  @include responsive-tablet() {
+    margin: 0 4rem 0 0rem;
+  }
+  @include responsive-small-desktop() {
+    margin: 0 5rem 0 5rem;
+  }
+  @include responsive-mobile() {
+    margin: 0 auto 10rem auto;
+  }
+  @include responsive-small-mobile() {
+    margin: 0 auto 10rem auto;
+  }
+}
+
+.content-dog2 {
+  background-color: $purple-main;
+  padding: 2rem 2rem 2rem 3.5rem;
+  width: 290px;
+  height: 300px;
+  border-radius: 30px;
+  position: relative;
+  transform: translateY(-105px);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $purple-circle-contact;
+    right: -9px;
+    top: -15px;
+    
+  }
+  img {
+    margin-top: .5rem;
+    width: 90px;
+  }
+  @include responsive-mobile() {
+    margin: 0 auto;
+  }
+  @include responsive-small-mobile() {
+    margin: 0 auto;
+  }
+}
+
+.content-dog3 {
+  transform: translateY(-52px);
+  margin-left: 7rem;
+  @include responsive-tablet() {
+    margin-left: 4rem;
+  }
+  @include responsive-small-desktop() {
+    margin-left: 5rem;
+  }
+  @include responsive-mobile() {
+    margin: 0 auto;
+  }
+  @include responsive-small-mobile() {
+    margin: 0 auto;
+  }
+  div:nth-child(1) {
+    background-color: $green-contact;
+    padding: 2.3rem 2rem 2rem 2rem;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 2rem;
+    position: relative;
+    transform: translateY(-10px);
+    b {
+      font: 500 3.8rem $font-secondary;
+      color: $light-main;
+    }
+    p {
+      font-weight: 400;
+      font-size: 1.4rem;
+      transform: translateY(-5px);
+    }
+    @include responsive-mobile() {
+      margin-top: 0;
+    }
+    @include responsive-small-mobile() {
+      margin-top: 0;
+    }
+  }
+  div:nth-child(2) {
+    margin-top: 2rem;
+    margin-left: .7rem;
+    @include responsive-mobile() {
+      margin-top: 1rem;
+    }
+    @include responsive-small-mobile() {
+      margin-top: 1rem;
+    }
+  }
+  .small-dog-contact {
+    position: absolute;
+    right: -13px;
+    top: 40px;
+  }
+}
+
+.line-contact {
+  margin: 10rem 0 0 6rem;
+  width: 40px;
+  transform: rotate(90deg);
+  border-color: $gray-line-contact;
+  @include responsive-small-desktop() {
+    margin-left: 4rem;
+  }
+  @include responsive-mobile() {
+    display: none;
+  }
+  @include responsive-small-mobile() {
+    display: none;
+  }
+}
+
+.dog-contact {
+  transform: translate(-20px, 3px);
+  width: 170px;
+  @include responsive-tablet() {
+    display: none;
+  }
+  @include responsive-mobile() {
+    display: none;
+  }
+  @include responsive-small-mobile() {
+    display: none;
+  }
+}
+
+.content-contact {
+  @include flexbox-center();
+  gap: 40px;
+  position: absolute;
+  top: 325px;
+  left: 300px;
+  @include responsive-tablet() {
+    flex-wrap: wrap;
+    top: 625px;
+    left: 0;
+  }
+  @include responsive-small-desktop() {
+    gap: 11px;
+    top: 335px;
+    left: 275px;
+  }
+  @include responsive-mobile() {
+    flex-wrap: wrap;
+    top: 1100px;
+    gap: 20px;
+    left: 0;
+  }
+  @include responsive-small-mobile() {
+    flex-wrap: wrap;
+    top: 1100px;
+    gap: 20px;
+    left: 0;
+  }
+  .content-infos-contact {
+    @include align-center();
+    gap: 20px;
+    .container-icon-contact {
+      background-color: $purple-circle-contact;
+      width: 65px;
+      height: 65px;
+      padding: 1rem;
+      border-radius: 50%;
+      img {
+        width: 33px;
+        margin: .6rem .5rem .5rem .7rem;
+      }
+    }
+    div {
+      h4 {
+        font: 600 2.2rem $font-main;
+        color: $light-main;
+        margin-bottom: .8rem;
+      }
+      p {
+        font: 300 1.6rem $font-main;
+        color: $light-main;
+        max-width: 230px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+

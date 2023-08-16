@@ -1,0 +1,16 @@
+
+@import "../abstracts/variables",
+"../abstracts/mixins",
+"../abstracts/reset",
+"../pages/nav",
+"../pages/home",
+"../pages/why-choose-us",
+"../pages/banner",
+"../pages/pets-category",
+"../pages/products",
+"../pages/contact",
+"../pages/footer";
+
+body {
+  background-color: $light-main;
+}
