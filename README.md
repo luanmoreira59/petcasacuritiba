@@ -28,7 +28,7 @@
 
 
 ## 🐱 Seções
-O site é composto por seis partes:
+O site é composto por cinco partes:
 
 - **Home:** Nessa parte é uma breve apresentação da empresa.
 - **Por que nos escolher:** Fala um pouco sobre o porque escolher a empresa para cuidar do seu pet.
