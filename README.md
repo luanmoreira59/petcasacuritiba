@@ -1,6 +1,6 @@
 
 <h1 align="center">
-<img src="assets/img//brand.svg" width="250px">
+<img src="assets/img//brand-footer.svg" width="250px">
 </h1>
 <br>
 
